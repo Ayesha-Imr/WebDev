@@ -1,0 +1,221 @@
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: "Times New Roman";
+  width: auto;
+}
+body {
+  background-image: url("BG1.jpg");
+  background-size: cover;
+  /*background-repeat: no-repeat;
+  /*background-position: center;
+  width:auto;
+  height:auto;*/
+}
+.list {
+  background-color: rgb(180,70,60);
+  text-align:center;
+  border: none;
+  box-shadow: 2px 2px 20px black;
+  width: 360px;
+  position: fixed;
+  font-size: 1.1em;
+}
+.list ul {
+  display: inline-flex;
+  list-style: none;
+  width:500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1;
+}
+
+.list ul li {
+  width: auto;
+  padding: 3px;
+  margin: 6px;
+  border-right: 1px solid brown;
+  z-index: 1;
+}
+.list ul li:last-child {
+  border-right: none;
+}
+.list ul li a {
+  text-decoration: none;
+  color: black;
+}
+.list ul li:hover, .active {
+  background-color: rgb(120,30,40);
+  border: 1 px solid rgb(90,20,30);
+  border-radius: 3px;
+}
+.headlist {
+z-index: 1;
+}
+.submenu1 {
+  display: none;
+  z-index:-2;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 40px;
+}
+.lastmenu {
+  margin-left: 8px;
+}
+.hover1:hover .submenu1{
+  display: block;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: -20px;
+  z-index: -2;  
+}
+.submenu1 ul {
+  display: block;
+  background-color: rgb(180,70,60);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow:black;
+  padding:3px;
+  z-index: -3;
+  width: 105px;
+  border-left: 1px solid brown;
+  border-right: 1px solid brown;  
+  border-bottom: 1px solid brown
+}
+.submenu1 ul li {
+  margin: 5px 6px;
+  padding: 3px;
+  background: transparent;
+  text-align:left;
+  border-bottom: 1px dotted black;
+  border-right: none;
+  z-index: -2;
+}
+.submenu1 ul li:last-child {
+  border-bottom: none;
+}
+img.icons {
+  width: 100%;
+  box-sizing:content-box;
+  padding-left: 25px;
+}
+.submenu2 {
+  display: none;
+  border:none;
+  border-radius: 30px;
+  width: 120px;
+}
+.hover2:hover .submenu2  {
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 80px;  
+}
+.submenu2 ul {
+  display: block;
+  background-color: rgb(180,70,60);
+  border-radius: 5px;
+  box-shadow:black;
+  padding:3px;
+  padding-left: 1px;
+  border: 1px solid brown;
+  z-index: -3;
+}
+.submenu2 ul li {
+  margin: 10px 15px;
+  padding: 3px;
+  background: transparent;
+  text-align:left;
+  border-bottom: 1px dotted black;
+}
+.submenu2 ul li:last-child {
+  border-bottom: none;
+}
+ 
+ /*the menu bar has been made; now onto the body*/
+ 
+ .gridcontainer {
+   position: absolute;
+   top: 60px;
+   left: 1px;
+   display: grid;
+   grid-template-columns: 110px 245px;
+   z-index: -4;
+ }
+ .box {
+   background-color: black;
+   color: white;
+   margin: 5px;
+   padding: 3px;
+   border-radius: 3px;
+ }
+ .box a{
+   text-decoration: none;
+   color: white;
+ }
+
+ .aside {
+   background-color: rgba(167, 48, 48, 0.76);
+ }
+ h2 a{
+ text-decoration: none;
+ color: white;
+ font-family: "Otomanopee One", sans-serif;
+ }
+ h2 a:hover {
+ background-color: white;
+ color:black;
+ font-family: "Otomanopee One", sans-serif;
+ }
+ .aside h2 {
+   font-size: 1.2em;
+   font-family: "Otomanopee One", sans-serif;
+   margin: 8px; 
+   text-align: center;
+ }
+ 
+.aside p {
+   font-size: 0.8em;
+   font-family: "Poppins", sans-serif;
+   margin: 2px;
+ }
+.main {
+   background-color: rgba(167, 48, 48, 0.76);
+   margin-left: 4px;
+ }
+.main h2 {
+   font-size: 1.5em;
+   font-family: "Otomanopee One", sans-serif;
+   text-align: center;
+   margin: 8px; 
+ }
+ 
+.main p {
+   font-size: 1.2em;
+   font-family:Tahoma,Arial,sans-serif;
+   margin: 15px;
+ }
+ .sample {
+   width: 200px;
+   margin-left: 13px;
+ }
+.paging {
+  display:inline-block;
+}
+.paging a {
+  float: left;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.paging a:hover- {
+  color: black;
+  background-color: white;
+}
+.current a{
+  color: black;
+  background-color: white;
+  }
